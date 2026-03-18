@@ -40,7 +40,7 @@ class TestDeskPostAd:
 
         wait.until(expected_conditions.visibility_of_element_located(DeskLocators.DESCRIPTION_FIELD)).send_keys(description)
         wait.until(expected_conditions.visibility_of_element_located(DeskLocators.PRICE_FIELD)).send_keys(price)
-        time.sleep(5)
+        
         wait.until(expected_conditions.element_to_be_clickable(DeskLocators.PUBLISH_BUTTON)).click()
         time.sleep(2)
         wait.until(expected_conditions.element_to_be_clickable(DeskLocators.AVATAR)).click()
